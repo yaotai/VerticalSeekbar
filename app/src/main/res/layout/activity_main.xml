@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.wl.vertical_seekbar.VerticalSeekbar
+        android:id="@+id/startVertical"
+        android:layout_width="20dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        app:bgColor="@color/cardview_dark_background"
+        app:progressColor="@color/design_default_color_error"
+        app:thumb="@drawable/index"
+        app:progress="10"
+        app:max="18"
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="add"/>
+
+    <Button
+        android:id="@+id/min"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="min"/>
+</LinearLayout>
+
+</RelativeLayout>

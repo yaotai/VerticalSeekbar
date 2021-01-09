@@ -1,0 +1,3 @@
+include ':vertical_seekbar'
+include ':app'
+rootProject.name = "VerticalSeekbar"
