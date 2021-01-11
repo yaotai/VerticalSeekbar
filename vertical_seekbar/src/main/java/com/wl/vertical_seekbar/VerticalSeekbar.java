@@ -61,6 +61,7 @@ public class VerticalSeekbar extends View {
             bgColor = typedArray.getColor(R.styleable.VerticalSeekbar_bgColor, bgColor);
             progressColor = typedArray.getColor(R.styleable.VerticalSeekbar_progressColor, progressColor);
             defaultProgress = typedArray.getInteger(R.styleable.VerticalSeekbar_progress, 0);
+            cursorColor=typedArray.getColor(R.styleable.VerticalSeekbar_thumbColor,Color.WHITE);
             max=typedArray.getInteger(R.styleable.VerticalSeekbar_max,100);
             Drawable drawable =typedArray.getDrawable(R.styleable.VerticalSeekbar_thumb);
             thumb =  ((BitmapDrawable)drawable).getBitmap();

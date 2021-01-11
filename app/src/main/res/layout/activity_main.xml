@@ -14,8 +14,7 @@
         app:bgColor="@color/cardview_dark_background"
         app:progressColor="@color/design_default_color_error"
         app:thumb="@drawable/index"
-        app:progress="10"
-        app:max="18"
+
         />
 
 <LinearLayout

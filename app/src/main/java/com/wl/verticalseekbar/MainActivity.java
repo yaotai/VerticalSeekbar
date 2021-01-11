@@ -3,6 +3,7 @@ package com.wl.verticalseekbar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 
 import com.wl.vertical_seekbar.Logs;
@@ -16,6 +17,8 @@ private int pro=50;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         startVertical=(VerticalSeekbar)findViewById(R.id.startVertical);
+        startVertical.setMax(100);
+        startVertical.setProgress(3);
         startVertical.setOnProgressCall(new VerticalSeekbar.OnProgressCall() {
             @Override
             public void change(int progress) {
@@ -44,5 +47,12 @@ private int pro=50;
             startVertical.setProgress(pro);
             }
         });
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                startVertical.setProgress(3);
+            }
+        },2000);
     }
+
 }
