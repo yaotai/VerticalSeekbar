@@ -14,7 +14,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
-import androidx.annotation.Nullable;
+
 
 public class VerticalSeekbar extends View {
     //控件高
@@ -48,7 +48,7 @@ public class VerticalSeekbar extends View {
         super(context);
     }
 
-    public VerticalSeekbar(Context context, @Nullable AttributeSet attrs) {
+    public VerticalSeekbar(Context context, AttributeSet attrs) {
         super(context, attrs);
         Logs.print("function ---VerticalSeekbar--->");
         initParams(context, attrs);

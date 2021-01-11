@@ -1,7 +1,8 @@
 package com.wl.verticalseekbar;
 
-import androidx.appcompat.app.AppCompatActivity;
 
+
+import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -9,7 +10,7 @@ import android.view.View;
 import com.wl.vertical_seekbar.Logs;
 import com.wl.vertical_seekbar.VerticalSeekbar;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
 private VerticalSeekbar startVertical;
 private int pro=50;
     @Override
